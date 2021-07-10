@@ -6,4 +6,4 @@ Feature: Acceptance Tests for Books Application
       | Title                  | Author    |
       | Jack Reacher: One Shot | Lee Child |
     When User submits "Post" endpoint
-    Then Verify "Success" response
+    Then Verify "201" response

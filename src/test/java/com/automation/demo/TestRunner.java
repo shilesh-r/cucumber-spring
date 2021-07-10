@@ -6,10 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty", "html:target/cucumber-reports/cucumber-html-report",
-        "json:target/cucumber-reports/cucumber.json"},
+        plugin = {"pretty", "json:target/cucumber-reports/cucumber.json"},
         features = {"src/test/resources/features"},
-        glue = {"com.automation.demo.stepdefinitions", "com.automation.demo.integration"},
+        glue = {"com.automation.demo.stepdefinitions", "com.automation.demo.integration","com.automation.demo.api"},
         publish = true
 )
 public class TestRunner {
