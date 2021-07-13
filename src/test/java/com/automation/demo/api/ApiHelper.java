@@ -2,7 +2,6 @@ package com.automation.demo.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Assert;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -56,7 +55,7 @@ public class ApiHelper {
 
     private String readStream(InputStream stream) {
         StringBuilder response = new StringBuilder();
-        BufferedReader in = null;
+        BufferedReader in;
 
         try {
             in = new BufferedReader(new InputStreamReader(stream));

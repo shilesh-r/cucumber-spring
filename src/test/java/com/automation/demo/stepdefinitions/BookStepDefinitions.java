@@ -12,10 +12,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
-import org.springframework.http.HttpStatus;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -50,7 +48,7 @@ public class BookStepDefinitions extends SpringIntegration {
     }
 
     @When("User submits {string} endpoint")
-    public void userSubmitsEndpoint(String endpoint) throws JsonProcessingException {
+    public void userSubmitsEndpoint(String endpoint) {
         for (Book addBookRequest : addBookRequests) {
             addBookResponses.add(apiHelper.submitPostRequestAndReturnResponseString("http://localhost:8081/api/books", addBookRequest));
         }
