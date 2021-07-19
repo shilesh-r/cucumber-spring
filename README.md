@@ -7,7 +7,7 @@ This project is to demonstrate how Cucumber Spring integration can be used to im
 2. H2 - For the in memory database
 3. Lombok - annotations and clean code
 4. Cucumber - 6.10.4 - latest version
-5. Sprint Test and Sprint Boot Test - to enabled Cucumber spring integration
+5. Spring Test and Spring Boot Test - to enabled Cucumber spring integration
 
 ## Reasons to implement ATDD
 1. Greater collaboration between developers and QA Engineers during feature implementation, therby leading to lesser defects
