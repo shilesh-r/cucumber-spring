@@ -54,4 +54,4 @@ Using IDE Run configuration, for IntelliJ:
 ### Reports Location:
 After execution, reports can be accessible via the link displayed in the maven logs (provided by Cucumber latest version).
 
-When this project is integrated in a Jenkis pipeline, _cucumber.json_ file in _target/cucumber-reports_ can be integrated in the Build using Jenkins Cucumber plugin
+When this project is integrated in a Jenkins pipeline, _cucumber.json_ file in _target/cucumber-reports_ can be integrated in the Build using Jenkins Cucumber plugin
